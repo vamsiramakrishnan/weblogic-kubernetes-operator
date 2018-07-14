@@ -87,7 +87,7 @@ exposeAdminT3Channel: false
 adminNodePort: 30701
 
 # Boolean to indicate if the adminNodePort will be exposed
-exposeAdminNodePort: false
+exposeAdminNodePort: true
 
 # Name of the domain namespace
 namespace: domain1
