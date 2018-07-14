@@ -29,7 +29,7 @@ startupControl: AUTO
 clusterName: cluster-1
 
 # Number of managed servers to generate for the domain
-configuredManagedServerCount: 2
+configuredManagedServerCount: 4
 
 # Number of managed servers to initially start for the domain
 initialManagedServerReplicas: 2
@@ -41,7 +41,7 @@ managedServerNameBase: managed-server
 managedServerPort: 8001
 
 # Persistent volume type for the domain's storage.
-# The value must be 'HOST_PATH' or 'NFS'. 
+# The value must be 'HOST_PATH' or 'NFS'.
 # If using 'NFS', weblogicDomainStorageNFSServer must be specified.
 weblogicDomainStorageType: NFS
 
@@ -51,7 +51,7 @@ weblogicDomainStorageNFSServer: 10.0.0.29
 
 # Physical path of the domain's persistent storage.
 # The following line must be uncomment and customized:
-weblogicDomainStoragePath: weblogic_shared_nfs_storage
+weblogicDomainStoragePath: /weblogic_shared_nfs_storage
 
 # Reclaim policy of the domain's persistent storage
 # The valid values are: 'Retain', 'Delete', and 'Recycle'
