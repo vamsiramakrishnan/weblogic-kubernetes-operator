@@ -56,6 +56,8 @@ spec:
         app: weblogic-operator
     spec:
       serviceAccountName: %ACCOUNT_NAME%
+      imagePullSecrets:
+      - name: ocr-pub-secret
       containers:
       - name: weblogic-operator
         #### this will change after publishing externally ####
@@ -100,8 +102,6 @@ spec:
               - '/operator/livenessProbe.sh'
           initialDelaySeconds: 120
           periodSeconds: 5
-      imagePullSecrets:
-      - name: ocr-pub-secret
       # Uncomment this container if using ELK integration:
       %ELK_INTEGRATION_PREFIX%- name: logstash
       %ELK_INTEGRATION_PREFIX%  image: logstash:5
