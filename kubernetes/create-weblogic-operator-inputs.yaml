@@ -62,7 +62,7 @@ externalRestHttpsPort: 31001
 #   DNS:myhost,DNS:localhost,IP:127.0.0.1
 # This parameter is required if 'externalRestOption' is 'SELF_SIGNED_CERT'.
 # Otherwise, it is ignored.
-externalSans: DNS:csginbtmq3g.us-ashburn-1.clusters.oci.oraclecloud.com
+externalSans: IP: 129.213.145.134
 # The customer supplied certificate to use for the external operator REST
 # https interface.  The value must be a string containing a base64 encoded PEM certificate.
 # This parameter is required if 'externalRestOption' is 'CUSTOM_CERT'.
