@@ -291,6 +291,8 @@ spec:
           env:
             - name: SHARED_PATH
               value: "/shared"
+      imagePullsecrets:
+       - name:  ocr-pub-secret
       volumes:
         - name: create-weblogic-domain-job-cm-volume
           configMap:
