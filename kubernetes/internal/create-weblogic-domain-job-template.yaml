@@ -275,7 +275,7 @@ spec:
       restartPolicy: Never
       containers:
         - name: create-weblogic-domain-job
-          image: container-registry.oracle.com/middleware/weblogic:12.2.1.3
+          image: iad.ocir.io/gse00014528/okeweblogicoperator/middleware/weblogic-kubernetes-operator:1.0
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 7001
