@@ -96,7 +96,7 @@ externalDebugHttpPort: 30999
 
 # The level of Java logging that should be enabled in the operator.
 # Valid values are: "SEVERE", "WARNING", "INFO", "CONFIG", "FINE", "FINER", and "FINEST".
-javaLoggingLevel: CONFIG
+javaLoggingLevel: INFO
 
 # Controls whether or not ELK integration is enabled.
 elkIntegrationEnabled: true
