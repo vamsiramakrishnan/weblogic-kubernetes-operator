@@ -81,7 +81,7 @@ t3ChannelPort: 30012
 t3PublicAddress: kubernetes
 
 # Boolean to indicate if the channel should be exposed as a service
-exposeAdminT3Channel: false
+exposeAdminT3Channel: true
 
 # NodePort to expose for the admin server
 adminNodePort: 30701
@@ -112,4 +112,4 @@ loadBalancerWebPort: 30305
 loadBalancerDashboardPort: 30315
 
 #Java Option for Weblogic Server
-javaOptions: -Dweblogic.StdoutDebugEnabled=false
+javaOptions: -Dweblogic.StdoutDebugEnabled=true
