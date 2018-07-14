@@ -26,7 +26,7 @@ clusterType: DYNAMIC
 startupControl: AUTO
 
 # Cluster name
-clusterName: cluster-1
+clusterName: cluster-2
 
 # Number of managed servers to generate for the domain
 configuredManagedServerCount: 4
@@ -72,7 +72,7 @@ weblogicCredentialsSecretName: domain2-weblogic-credentials
 #weblogicImagePullSecretName:
 
 # Port for the T3Channel of the NetworkAccessPoint
-t3ChannelPort: 30012
+t3ChannelPort: 30112
 
 # Public address for T3Channel of the NetworkAccessPoint.  This value should be set to the
 # kubernetes server address, which you can get by running "kubectl cluster-info".  If this
