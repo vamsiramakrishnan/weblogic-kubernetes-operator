@@ -11,7 +11,7 @@ adminPort: 7001
 adminServerName: admin-server
 
 # Name of the WebLogic domain to create
-domainName: base_domain
+domainName: other_domain
 
 # Unique id identifying a domain.
 # This id must be lowercase and unique across all domains in a Kubernetes cluster.
@@ -90,7 +90,7 @@ adminNodePort: 30701
 exposeAdminNodePort: false
 
 # Name of the domain namespace
-namespace: domain1
+namespace: domain2
 
 # Load balancer to deploy.  Supported values are: APACHE, TRAEFIK, VOYAGER, NONE
 loadBalancer: TRAEFIK
