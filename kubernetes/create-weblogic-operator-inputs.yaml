@@ -25,7 +25,7 @@ targetNamespaces: domain1
 weblogicOperatorImage: iad.ocir.io/gse00014528/okeweblogicoperator/middleware/weblogic-kubernetes-operator:1.0
 
 # The image pull policy for the operator docker image.
-weblogicOperatorImagePullPolicy: IfNotPresent
+weblogicOperatorImagePullPolicy: Always
 
 # Name of the Kubernetes secret to access the registry containing the operator Docker image
 # The presence of the secret will be validated when this parameter is enabled.
@@ -80,7 +80,7 @@ externalOperatorKey:
 # The 'internalDebugHttpPort' property controls the port number inside the Kubernetes
 # cluster and the 'externalDebugHttpPort' property controls the port number outside
 # the Kubernetes cluster.
-remoteDebugNodePortEnabled: true
+remoteDebugNodePortEnabled: false
 
 # The port number inside the Kubernetes cluster for the operator's Java
 # remote debug server.
