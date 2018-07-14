@@ -15,7 +15,7 @@ domainName: base_domain
 
 # Unique id identifying a domain.
 # This id must be lowercase and unique across all domains in a Kubernetes cluster.
-#domainUID: domain1
+domainUID: domain1
 
 # Type of WebLogic Cluster
 # Legal values are "CONFIGURED" or "DYNAMIC" 
@@ -43,15 +43,15 @@ managedServerPort: 8001
 # Persistent volume type for the domain's storage.
 # The value must be 'HOST_PATH' or 'NFS'. 
 # If using 'NFS', weblogicDomainStorageNFSServer must be specified.
-weblogicDomainStorageType: HOST_PATH
+weblogicDomainStorageType: NFS
 
 # The server name or ip address of the NFS server to use for the domain's storage.
 # The following line must be uncomment and customized if weblogicDomainStorateType is NFS:
-#weblogicDomainStorageNFSServer: nfsServer
+weblogicDomainStorageNFSServer: 10.0.0.29
 
 # Physical path of the domain's persistent storage.
 # The following line must be uncomment and customized:
-#weblogicDomainStoragePath: /scratch/k8s_dir/domain1
+weblogicDomainStoragePath: weblogic_shared_nfs_storage
 
 # Reclaim policy of the domain's persistent storage
 # The valid values are: 'Retain', 'Delete', and 'Recycle'
